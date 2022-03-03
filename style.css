@@ -1,0 +1,66 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #202632;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartao-principal {
+    position: relative;
+    background-color: #313b47;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 50px;
+    padding: 40px;
+    gap: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #29313b;
+}
+.id {
+    color: #53ffaa;
+    letter-spacing: 0.3rem;
+}
+.conselho {
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.icone-desktop, .icone-mobile {
+    margin-bottom: 30px;
+}
+.botao {
+    position: absolute;
+    bottom: -27px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 55px;
+    border: none;
+    background-color: #53ffaa;
+}
+.botao:hover {
+    box-shadow: 0px 0px 15px #53ffaa;
+}
+.oculto {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .icone-desktop {
+        display: none;
+    }
+    .icone-mobile {
+        display: block;
+    }
+    .cartao-principal {
+        width: 270px;
+    }
+}
